@@ -172,7 +172,11 @@
                             <thead>
                                     <tr>
                                     <th>Student Name</th>
+                                    <th>Matric Number</th>
                                     <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Department</th>
+                                    <th>Level</th>
                                     <th>Trade</th>
                                     <th>Status</th>
                                 </tr>
@@ -181,7 +185,11 @@
                                 @foreach($students as $student)
                                 <tr>
                                     <td>{{ $student->name }}</td>
+                                    <td>{{ $student->matric_number }}</td>
                                     <td>{{ $student->email }}</td>
+                                    <td>{{ $student->phone_number }}</td>
+                                    <td>{{ $student->department }}</td>
+                                    <td>{{ $student->level }}</td>
                                     <td>{{ $student->trade ? $student->trade->name : 'None' }}</td>
                                     <td><span class="badge green">Active</span></td>
                                 </tr>
