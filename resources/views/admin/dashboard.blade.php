@@ -128,9 +128,9 @@
                                 <tr>
                                     <td>{{ $trade->name }}</td>
                                     <td>{{ $trade->capacity }}</td>
-                                    <td>{{ $trade->users_count }}</td>
+                                    <td>{{ $trade->students_count }}</td>
                                     <td>
-                                        @if($trade->users_count >= $trade->capacity)
+                                        @if($trade->students_count >= $trade->capacity)
                                             <span class="badge red">Full</span>
                                         @else
                                             <span class="badge green">Available</span>
