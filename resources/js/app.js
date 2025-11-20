@@ -1,3 +1,5 @@
+import './bootstrap';
+
 // Mock Data Initialization
 const INITIAL_TRADES = [
     { id: 1, name: 'Tie and Dye', capacity: 50, enrolled: 0 },
@@ -89,7 +91,7 @@ function login(username, password, role) {
     if (admin) {
         currentUser = admin;
         Storage.setCurrentUser(currentUser);
-        window.location.href = 'dashboard.html';
+        window.location.href = '/admin/dashboard'; // Updated for Laravel Route
     } else {
         alert('Invalid credentials or role selection.');
     }
@@ -98,7 +100,7 @@ function login(username, password, role) {
 function logout() {
     Storage.clearSession();
     currentUser = null;
-    window.location.href = 'admin-login.html';
+    window.location.href = '/admin/login'; // Updated for Laravel Route
 }
 
 function setupAdminUI(user) {
@@ -133,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pages.dashboard) {
         const savedUser = Storage.getCurrentUser();
         if (!savedUser) {
-            window.location.href = 'admin-login.html';
+            window.location.href = '/admin/login'; // Updated for Laravel Route
             return;
         }
         currentUser = savedUser;
