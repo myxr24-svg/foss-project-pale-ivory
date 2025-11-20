@@ -1,12 +1,29 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tfYzIujW)
 
-# Student Registration System (Pale Ivory)
+Babcock University Entreprenership Payment System
+<br>
+A platform that streamlines payment authentication, and the entrepreneurship center management platform all in one platform
+<br>
 
-A simple web-based application for students to register for entrepreneurship trades and for administrators to manage the process.
-
-## Features
-
-- **Student Registration**: Students can register for available trades (e.g., Tie and Dye, Photography, Web Design).
-- **Admin Dashboard**: Administrators can view registered students and manage trade capacities.
-- **Authentication**: Secure login for administrators.
-- **Data Persistence**: Uses LocalStorage to save data locally in the browser.
+Benefits
+- It simplifies payment verification
+- Allows student makes registration
+- It reduces stress
+- it improves management efficiency
+  <br>
+  
+  Features
+- Login
+- Register and Select trade
+- Make payment through transfer or card
+- Logout
+  <br>
+  
+  Tools
+- Figma-a design tool used mainly for creating UI/UX designs.
+  <br>
+  
+  HOW TO USE THIS REPO
+  <br>
+1. Clone the project. Open your terminal and use the following command:
+   https://github.com/BU-SENG/foss-project-pale-ivory
